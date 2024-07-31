@@ -1,0 +1,32 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+
+.task-status-dot.pending {
+    background-color: red;
+}
+
+.task-status-dot.completed {
+    background-color: green;
+}
+
+.task-title {
+    flex-grow: 1;
+}
+
+.completed .task-title {
+    text-decoration: line-through;
+}
