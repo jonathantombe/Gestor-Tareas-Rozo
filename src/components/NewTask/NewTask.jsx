@@ -23,23 +23,11 @@ export const NewTask = () => {
             <form className="frm-task" onSubmit={handleSubmit}>
                 <div className="group-title-task">
                     <label htmlFor="taskTitle">Título de la tarea:</label>
-                    <input
-                        type="text"
-                        id="taskTitle"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        placeholder="Ingrese el título"
-                    />
+                    <input type="text" id="taskTitle" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Ingrese el título"/>
                 </div>
                 <div className="group-description-task">
                     <label htmlFor="taskDescription">Descripción de la tarea:</label>
-                    <input
-                        type="text"
-                        id="taskDescription"
-                        value={description}
-                        onChange={(e) => setDescription(e.target.value)}
-                        placeholder="Ingrese la descripción"
-                    />
+                    <input type="text" id="taskDescription" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Ingrese la descripción" />
                 </div>
                 <button type="submit" className="btn-new-task">Crear nueva tarea</button>
             </form>

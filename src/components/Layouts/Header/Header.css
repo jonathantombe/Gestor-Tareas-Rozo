@@ -1,5 +1,5 @@
 .header-app {
-    width: 90vw;
+    width: 100vw;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     position: fixed;
     top: 0;
     background-color: #fff;
+    z-index: 1000;
 }
 
 .container-header-1 {
